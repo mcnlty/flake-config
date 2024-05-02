@@ -1,12 +1,7 @@
 CD into nixos folder and run flake init to create a template file
 ```
 cd /etc/nixos
-sudo nix flake init
-```
-
-Edit the flake.nix file with the [template provided](https://github.com/mcnlty/flake-config/blob/main/default/flake.nix)
-```
-sudo vim flake.nix
+sudo nix flake init --template github:mcnlty/flake-config
 ```
 
 Rebuild system with the new command
